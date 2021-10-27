@@ -9,6 +9,7 @@ public class Program {
 //        System.out.println(pozitive(array));
         System.out.println(division(7, 4, 3, 2));
         System.out.println(evenNum(array));
+         System.out.println(random(5,50));
     }
 //     public static int pozitive(List<Integer> list) {
 //        int count = 0;
@@ -37,6 +38,16 @@ public class Program {
             
         }
         return res;
+    }
+     public static List<Integer> random(int count, int upbor) {
+        List<Integer> mas = new ArrayList<>();
+        Random random = new Random();
+        for (int i = 0; i < count; i++) {
+            mas.add(random.nextInt(upbor));
+
+
+        }
+        return mas;
     }
 
 }
